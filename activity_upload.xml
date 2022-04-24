@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgi2"
+    tools:context=".uploadActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/aclonica"
+        android:padding="5dp"
+        android:text="Story Reading"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="70dp"
+        app:cardBackgroundColor="#6800BCD4"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/aclonica"
+            android:padding="5dp"
+            android:text="Upload your Story"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Story Name"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/filetitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="190dp"
+            android:ems="10"
+            android:fontFamily="@font/andada"
+            android:hint="Story Name"
+            android:inputType="textPersonName"
+            android:textSize="28sp"
+            android:textStyle="italic" />
+
+
+        <ImageView
+            android:id="@+id/imagebrowse"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="270dp"
+            app:srcCompat="@drawable/browse" />
+
+        <ImageView
+            android:id="@+id/imageupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="430dp"
+            app:srcCompat="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/filelogo"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="270dp"
+            app:srcCompat="@drawable/file" />
+
+        <ImageView
+            android:id="@+id/cancelfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="250dp"
+            app:srcCompat="@drawable/cancel" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
